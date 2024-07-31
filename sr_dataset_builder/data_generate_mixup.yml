@@ -1,0 +1,19 @@
+train_dir: output/train
+train_data: ['data_HR.pkl','data_LR.pkl']
+target_data_csv: data_LR.csv
+# 0: normalized_mean_slope_gradient, 1: altitude_difference, 2: mean_slope_gradient_norm_data, 3: mean_slope_gradient
+target_value: 3
+threshold: 0.1
+std: 0.05
+save_dir_name: mixup_data
+random_split: False
+alpha: 0.5
+lamb: 0.8
+plot_figure: False
+original_image_num: 11053
+increase_rate: 2
+
+get_slope_difference:
+  valid: True
+  input_data_dir: oki_test_inter/test
+  delta: 50

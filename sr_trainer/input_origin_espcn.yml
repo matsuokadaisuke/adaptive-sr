@@ -1,0 +1,56 @@
+# input image shape. (32, 32, 1) is recommended.
+input_shape: !!python/tuple [16, 16, 1]
+# super-resolution scale. 2x is recommended.
+scale: 4
+# dataset directory including train, validation and test directories
+data_dir: data/
+# data range for normalization
+norm_range: !!python/tuple [-2500, 0]
+# model type (srcnn, fsrcnn, espcn, srgan, esrgan)
+model: espcn
+# filename of trained weights (None for new model)
+fname_model_weights: None
+# training batch size
+batch_size: 32
+# number of training epochs
+epochs: 5000
+# loss function (mae, mse, psnr, ssim, vgg)
+loss: mse
+# optimizer (sgd, rmsprop, adagrad, adadelta, adam, adamax, nadam)
+optimizer: adam
+# learning rate
+learning_rate: 0.000453039
+# training log directory
+log_dir: log_dir
+# logging perieod
+log_period: 20
+# early stopping Number of epochs with no improvement after which training will be stopped. if null not use early stopping
+patience: 200
+# random rotate fill mode (constant, nearest, reflect, wrap). if null not use random rotate
+# fill_mode: 
+
+online_da:
+  valid: true
+  zoom_range: !!python/tuple [0.5,1.0]
+  zoom_iso: true
+  depth_scale_range: !!python/tuple [0.5,1.5] 
+  use_depth_scale: true
+  horizontal_flip: false
+  vertical_flip: false
+  rotation_range: 0
+  steps_per_epoch_mag: 3
+
+srcnn: 
+  filters: !!python/tuple [64,32]
+  kernels: !!python/tuple [9,1,5]
+
+espcn:
+  filters: !!python/tuple [64,32]
+  kernels: !!python/tuple [5,3,3] 
+
+esrgan:
+  filters: 32
+  num_residual_blocks: 2
+  d_filters: 4
+  d_num_downsampling_blocks: 1
+  loss_weights: [1, 1.0e-7]

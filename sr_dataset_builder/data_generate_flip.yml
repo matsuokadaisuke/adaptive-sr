@@ -1,0 +1,3 @@
+train_dir: output/train
+train_data: ['data_HR.pkl','data_LR.pkl']
+train_savedir: output/train/flip

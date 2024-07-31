@@ -1,0 +1,6 @@
+train_dir: output/train
+train_data: ['data_HR.pkl','data_LR.pkl']
+train_savedata: ['data_HR_rotate30_reflect.pkl','data_LR_rotate30_reflect.pkl']
+#  'nearest', 'reflect', 'wrap'
+fill_mode: 'reflect'
+angles: [30,60,90,120,150,180,210,240,270,300,330]
