@@ -68,4 +68,4 @@ positional arguments:
 ```
 
 ## Citation
-Murakami, K., D. Matsuoka, N. Takatsuki, M. Hidaka, J. Kaneko, Y. Kido and E. Kikawa (20XX) Adaptive super-resolution for ocean bathymetric maps using deep neural network and data augmentation. Earth and Space Science, XXX
+Murakami, K., D. Matsuoka, N. Takatsuki, M. Hidaka, J. Kaneko, Y. Kido and E. Kikawa (20XX) Adaptive super-resolution for ocean bathymetric maps using deep neural network and data augmentation. *Earth and Space Science*, XXX
