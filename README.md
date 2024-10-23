@@ -66,3 +66,6 @@ positional arguments:
   yml_fname     filename including input parameters (.yml)
   {train,test}  execution mode: train or test
 ```
+
+## Citation
+Murakami, K., D. Matsuoka, N. Takatsuki, M. Hidaka, J. Kaneko, Y. Kido and E. Kikawa (20XX) Adaptive super-resolution for ocean bathymetric maps using deep neural network and data augmentation. Earth and Space Science, XXX
